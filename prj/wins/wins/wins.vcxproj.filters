@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{f06a4ce2-d090-4f3b-8b68-da7b5637d09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\jsoncpp">
+      <UniqueIdentifier>{47b79a90-795e-47f8-9039-1d81263a0d5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\spdlog">
+      <UniqueIdentifier>{324f7de5-4313-41de-9f61-cd4f0ea1233e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\src\main.cpp" />
+    <ClCompile Include="..\..\..\src\third_party\jsoncpp\src\lib_json\json_reader.cpp">
+      <Filter>third_party\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\third_party\jsoncpp\src\lib_json\json_value.cpp">
+      <Filter>third_party\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\third_party\jsoncpp\src\lib_json\json_writer.cpp">
+      <Filter>third_party\jsoncpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
